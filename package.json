@@ -1,0 +1,12 @@
+{
+  "name": "k6-vanguard",
+  "version": "1.1.0",
+  "description": "Enterprise-grade performance and functional testing framework using k6",
+  "author": "Dodik",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+
+}

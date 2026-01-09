@@ -1,0 +1,12 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# K6 Reports
+reports/*.html
+reports/*.json
+reports/*.xml
+
+# Environment Secrets
+.env
+configs/env.js
