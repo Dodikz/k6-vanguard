@@ -6,7 +6,20 @@
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test:api": "k6 run tests/api/rest_test.js",
+    "test:graphql": "k6 run tests/api/graphql_test.js",
+    "test:web": "k6 run tests/web/frontend_test.js",
+    "test:ws": "k6 run tests/protocol/websocket_test.js",
+    "test:load": "k6 run tests/performance/load_test.js",
+    "test:stress": "k6 run tests/performance/stress_test.js",
+    "test:spike": "k6 run tests/performance/spike_test.js",
+    "test:soak": "k6 run tests/performance/soak_test.js",
+    "test:spam": "k6 run tests/performance/spam_test.js",
+    "test:cookie": "k6 run tests/api/cookie_test.js",
+    "test:chaos": "k6 run tests/scenarios/chaos_test.js",
+    "test:all": "node scripts/run-all.js",
+    "clean:reports": "find reports -type f ! -name '.gitkeep' -delete",
+    "prepare": "mkdir -p reports/api reports/performance reports/protocol reports/scenarios reports/web reports/defaults"
   }
 
 }
